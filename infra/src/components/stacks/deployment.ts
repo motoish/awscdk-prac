@@ -12,9 +12,7 @@ export class Deployment extends Stack {
 
     const deployableRole = new iam.Role(this, 'DeployableRole', {
       maxSessionDuration: Duration.hours(3),
-      assumedBy: new iam.ArnPrincipal(
-        'arn:aws:iam::{}:user/GitHubActions'
-      ),
+      assumedBy: new iam.ArnPrincipal('arn:aws:iam::{}:user/GitHubActions'),
       externalIds: [
         secretsmanager.Secret.fromSecretNameV2(
           this,

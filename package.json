@@ -1,0 +1,13 @@
+{
+  "name": "awscdk-prac",
+  "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "postinstall": "husky install",
+    "lint": "prettier --ignore-unknown --write 'infra/**'"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7"
+  }
+}
