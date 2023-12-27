@@ -4,9 +4,15 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/infra" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
     reviewers:
       - "motoish"
     labels:
       - "dependencies"
       - 'npm'
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
