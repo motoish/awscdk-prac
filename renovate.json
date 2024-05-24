@@ -3,5 +3,7 @@
   "extends": [
     "config:recommended"
   ],
+  "assignees": ["motoish"],
+  "semanticCommitScope": "deps",
   "prHourlyLimit": 1
 }
