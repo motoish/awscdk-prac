@@ -1,9 +1,13 @@
 {
   "name": "awscdk-prac",
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.8.2",
   "scripts": {
     "postinstall": "husky install",
     "lint": "prettier --ignore-unknown --write 'infra/**'"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": "please_use_yarn_instead"
   },
   "devDependencies": {
     "husky": "^9.0.0",
