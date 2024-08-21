@@ -3,7 +3,12 @@
   "extends": [
     "config:recommended"
   ],
-  "reviewers": ["motoish"],
+  "reviewers": [
+    "motoish"
+  ],
   "semanticCommitScope": "deps",
-  "prHourlyLimit": 1
+  "timezone": "Asia/Tokyo",
+  "schedule": [
+    "before 11am on the first day of the month"
+  ]
 }
