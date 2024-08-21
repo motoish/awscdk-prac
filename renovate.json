@@ -1,12 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    ":semanticCommits",
+    ":disableDependencyDashboard"
   ],
   "reviewers": [
     "motoish"
   ],
-  "semanticCommitScope": "deps",
+  "semanticCommitType": "fix",
+  "semanticCommitScope": "renovate",
   "timezone": "Asia/Tokyo",
   "schedule": [
     "before 11am on the first day of the month"
