@@ -15,6 +15,11 @@ updates:
         dependency-type: "development"
         update-types:
           - "minor"
+    commit-message:
+      prefix: "npm"
+      prefix-development: "dependabot"
+    pull-request-branch-name:
+      separator: "-"
     reviewers:
       - "motoish"
     labels:
