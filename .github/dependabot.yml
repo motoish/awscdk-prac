@@ -5,6 +5,9 @@ updates:
     directory: "/infra" # Location of package manifests
     schedule:
       interval: "monthly"
+      day: "monday"
+      time: "11:00"
+      timezone: "Asia/Tokyo"
     reviewers:
       - "motoish"
     labels:
