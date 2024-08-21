@@ -1,18 +1,25 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/infra" # Location of package manifests
+  - package-ecosystem: "npm"
+    directories:
+      - "/infra"
+      - "/"
     schedule:
       interval: "monthly"
       day: "monday"
       time: "11:00"
       timezone: "Asia/Tokyo"
+    groups:
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
     reviewers:
       - "motoish"
     labels:
       - "dependencies"
-      - 'npm'
+      - "npm"
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
