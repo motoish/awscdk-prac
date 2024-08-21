@@ -1,18 +1,40 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
+  - package-ecosystem: "npm"
     directory: "/infra" # Location of package manifests
     schedule:
       interval: "monthly"
       day: "monday"
       time: "11:00"
       timezone: "Asia/Tokyo"
+    groups:
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
     reviewers:
       - "motoish"
     labels:
       - "dependencies"
-      - 'npm'
+      - "npm"
+  - package-ecosystem: "npm"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "monthly"
+      day: "monday"
+      time: "11:00"
+      timezone: "Asia/Tokyo"
+    groups:
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+    reviewers:
+      - "motoish"
+    labels:
+      - "dependencies"
+      - "npm"
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
