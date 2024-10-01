@@ -9,7 +9,7 @@ services:
       - DOCKER_HOST=unix:///var/run/docker.sock
       - DEFAULT_REGION=ap-northeast-1
   database:
-    image: postgres:16-alpine3.20
+    image: postgres:17-alpine3.20
     restart: always
     ports:
       - '5432:5432'
