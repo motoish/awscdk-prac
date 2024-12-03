@@ -1,6 +1,6 @@
 {
   "name": "awscdk-prac",
-  "packageManager": "yarn@3.8.5",
+  "packageManager": "yarn@4.5.3",
   "scripts": {
     "prepare": "husky",
     "lint": "prettier --ignore-unknown --write 'infra/**'"
