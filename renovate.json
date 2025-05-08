@@ -16,5 +16,11 @@
   "labels": [
     "dependencies",
     "renovate"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": ["patch"],
+      "enabled": false
+    }
   ]
 }
