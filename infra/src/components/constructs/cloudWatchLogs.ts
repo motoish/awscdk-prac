@@ -8,12 +8,12 @@ export class CloudWatchLogs extends Construct {
   constructor(
     readonly scope: Construct,
     readonly id: string,
-    readonly props: logs.LogGroupProps
+    readonly props: logs.LogGroupProps,
   ) {
     super(scope, id)
 
     this.logGroup = new logs.LogGroup(this, 'LogGroup', {
-      retention: 90,
+      retention: logs.RetentionDays.FIVE_DAYS,
       removalPolicy: RemovalPolicy.DESTROY,
       ...props,
     })
